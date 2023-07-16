@@ -1,0 +1,37 @@
+@import 'react-querybuilder/dist/query-builder.scss';
+
+.query-container{
+    background: #232526;
+    padding: 15px;
+    color: #DFDDDD;
+    box-shadow: 5px 5px 10px black;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+
+    .query-builder{
+        background: #414345;
+        border-radius: 5px;
+    }
+    .ruleGroup{
+        border-color: #DFDDDD;
+        background: rgba(146, 146, 146, 0.3);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .query-container{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .ruleGroup{
+        .ruleGroup-body{
+            select{
+                width: 25%;
+            }
+            input{
+                width: 25%;
+            }
+        }
+    }
+}
